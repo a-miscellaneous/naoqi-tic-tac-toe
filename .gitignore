@@ -1,0 +1,5 @@
+/pictures
+/__pycache__
+.pyc
+*.pyc
+.txt
