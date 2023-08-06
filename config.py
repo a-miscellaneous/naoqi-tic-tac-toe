@@ -12,7 +12,7 @@ ROBOT_PORT = 9559
 
 CAMERA_NAME = "c1Name"
 CAMERA_RESOLUTION = 2  
-CAMERA_COLOR = vision_definitions.kRGBColorSpace
+CAMERA_COLOR = vision_definitions.kRGBColorSpace # 11
 CAMERA_FPS = 30
 CAMERA_INDEX = 0
 CAMERA_NAME = "Camera Name"
