@@ -30,7 +30,7 @@ class RobotVision(BasicRobot):
 
     def handleImage(self, imagePath):
         boardState = getBoardState(imagePath)
-        print boardState
+        # print boardState
         if boardState == None:
             self.window = []
             return
@@ -54,7 +54,7 @@ class RobotVision(BasicRobot):
         print "Handler"
         sol = solver(finalBoard)
         print sol
-        if sol == (None, None):
+        if sol[0] == None:
             return
         solution = cfg.DIRECTION_MAP[sol[0]-1]
         self.handleSpeach(solution)
@@ -81,10 +81,7 @@ class RobotVision(BasicRobot):
 
 if __name__ == "__main__":
     robot = RobotVision()
-    # robot.goToPosture("Stand")
-    robot.getProxy("ALAutonomousLife").setState("disabled")
-    robot.getProxy("ALMotion").wakeUp()
+    robot.goToPosture("StandInit")
 
     robot.getCameraImage()
-    robot.handleSpeach("D")
     robot.rest()
