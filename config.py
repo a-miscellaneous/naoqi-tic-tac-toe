@@ -1,12 +1,6 @@
 import vision_definitions
 
-# ROBOT_IP = "10.0.7.100"
-# ROBOT_IP = "10.0.7.113"
 ROBOT_IP = "10.0.7.113"
-# ROBOT_IP = "10.0.7.120"
-# ROBOT_IP = "nao3.local"
-# ROBOT_IP = "169.254.61.216"
-# ROBOT_IP = "nao6.local"
 ROBOT_PORT = 9559
 
 
